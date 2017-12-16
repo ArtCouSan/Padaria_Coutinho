@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.TableView?>
+
+<TabPane prefHeight="500.0" prefWidth="700.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.Controller" >
+	<tabs>
+		<Tab text="Consulta de Estoque">
+         <content>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="2000.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints fillHeight="false" maxHeight="260.0" minHeight="43.0" prefHeight="48.0" />
+                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="346.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TableView prefHeight="293.0" prefWidth="622.0" GridPane.rowIndex="1">
+                    <columns>
+                      <TableColumn maxWidth="1.7976931348623157E308" prefWidth="226.0" text="Categoria" />
+                      <TableColumn maxWidth="1.7976931348623157E308" prefWidth="211.0" text="Nome" />
+                        <TableColumn text="Quantidade" />
+                        <TableColumn maxWidth="104.0" prefWidth="104.0" text="Preço" />
+                    </columns>
+                  </TableView>
+                  <TextField prefHeight="25.0" prefWidth="200.0">
+                     <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </GridPane.margin>
+                  </TextField>
+               </children>
+            </GridPane>
+         </content>
+		</Tab>
+
+		<Tab text="Cadastro de Produto">
+			<content>
+				<GridPane minWidth="-1.0" padding="$x1">
+					<children>
+						<ComboBox maxWidth="2000.0"  prefHeight="25.0" prefWidth="456.0" promptText="Escolha uma categoria" GridPane.rowIndex="2">
+							<items>
+								<FXCollections fx:factory="observableArrayList">
+									<String fx:value="Alimentos" />
+									<String fx:value="Bebidas" />
+									<String fx:value="Doces" />
+									<String fx:value="Higiene Pessoal" />
+									<String fx:value="Produtos de Beleza" />
+									<String fx:value="Automoveis" />
+									<String fx:value="Embalagens" />
+									<String fx:value="Utencilios Domesticos" />
+									<String fx:value="Papelaria" />
+									<String fx:value="Limpeza" />
+									<String fx:value="Pet Shop" />
+								</FXCollections>
+							</items>
+							<GridPane.margin>
+								<Insets left="10.0" fx:id="x1" />
+							</GridPane.margin>
+						</ComboBox>
+						<Label text="Nome :" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="5" />
+						<TextField prefWidth="248.0" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="6" />
+						<Label text="Marca :" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="3" />
+						<ComboBox maxWidth="2000.0" prefHeight="21.0" prefWidth="458.0" promptText="Escolha uma marca" GridPane.columnIndex="0" GridPane.rowIndex="4">
+							<items>
+								<FXCollections fx:factory="observableArrayList">
+								
+								</FXCollections>
+							</items>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+						</ComboBox>
+						<Label text="Descrição :" GridPane.columnIndex="0" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin></Label>
+						<Label text="Data de Vencimento :" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="9" />
+						<Label text="Quantidade Comprada :" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="11" />
+						<Label text="Quantidade Em Estoque :" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="13" />
+						<TextField prefWidth="200.0" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="10" />
+						<TextField prefWidth="200.0" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="12" />
+						<TextField disable="true" prefWidth="200.0" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="14" />
+						<Label text="Preço :" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="15" />
+						<TextField prefWidth="200.0" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="16" />
+						<Label text="Categoria :" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="1" />
+						<Button alignment="BOTTOM_RIGHT" contentDisplay="BOTTOM" defaultButton="true" mnemonicParsing="false" text="Cadastrar" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="17" GridPane.valignment="BOTTOM" GridPane.vgrow="SOMETIMES">
+							<GridPane.margin>
+								<Insets left="10.0" right="15.0" />
+							</GridPane.margin>
+						</Button>
+						<TextArea prefHeight="33.0" prefWidth="296.0" wrapText="true" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="8" />
+                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+					</children>
+					<columnConstraints>
+						<ColumnConstraints hgrow="SOMETIMES" maxWidth="531.0" minWidth="10.0" percentWidth="80.0" prefWidth="464.6" />
+						<ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="148.0" />
+					</columnConstraints>
+					<rowConstraints>
+						<RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+						<RowConstraints fillHeight="false" maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="35.0" />
+						<RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
+					</rowConstraints>
+				</GridPane>
+			</content>
+		</Tab>
+	</tabs>
+</TabPane>
