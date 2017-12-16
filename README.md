@@ -1,6 +1,6 @@
-# Projeto
+<div class="align-center"># Projeto</div>
 
-  Backoffice de uma padaria ou mercadinho para planos futuros 
+  Backoffice de padaria ou mercadinho para planos futuros 
   
 # Utilização
 
