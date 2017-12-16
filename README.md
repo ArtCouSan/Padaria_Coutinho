@@ -1,4 +1,4 @@
-<div class="align-center"># Projeto</div>
+# Projeto
 
   Backoffice de padaria ou mercadinho para planos futuros 
   
