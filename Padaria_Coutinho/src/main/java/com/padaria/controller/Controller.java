@@ -1,5 +1,10 @@
 package com.padaria.controller;
 
+import java.math.BigDecimal;
+
+import com.padaria.dao.ProdutoDAO;
+import com.padaria.model.Produto;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
@@ -18,6 +23,12 @@ public class Controller{
 	
 	@FXML
 	private ComboBox<?> comboMarca;
+	
+	@FXML
+	private TextField campoCategoria;
+	
+	@FXML
+	private TextField campoMarca;
 	
 	@FXML
 	private TextField campoNome;
@@ -44,11 +55,31 @@ public class Controller{
 	@FXML
 	private Label labelNome;
 	
-	// Tela Consulta
+	private static ProdutoDAO produtoDAO = new ProdutoDAO();
 	
-	public void initialize() {
+	public void botaoAddProduto() {
+	
+		Produto produto = new Produto();
 		
-		labelNome.setText("Nome :");
+		produto.setCodigoBarra(campoCodigoBarra.getText());
+		
+		produto.setCategoria(campoCategoria.getText());
+		
+		produto.setMarca(campoMarca.getText());
+
+		produto.setNome(campoNome.getText());
+		
+		produto.setDescricao(campoDescricao.getText());
+		
+		produto.setDtVencimento(campoDtVencimento.getText());
+		
+		produto.setQtnComprada(new Integer(campoQtnComprada.getText())); 
+		
+		produto.setQtnEstoque(new Integer(campoQtnEstoque.getText()));
+		
+		produto.setPreco(new BigDecimal(campoPreco.getText()));
+		
+		produtoDAO.addProduto(produto);
 		
 	}
 

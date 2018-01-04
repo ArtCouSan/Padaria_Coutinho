@@ -7,7 +7,6 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.springframework.stereotype.Component;
 
-@SuppressWarnings("restriction")
 @Component
 public class PadariaCoutinhoApplication extends Application {
 
