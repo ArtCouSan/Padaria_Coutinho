@@ -4,9 +4,10 @@
   
 # Utilização
 
-- Linguagem: JavaFX 2.0 + Spring MVC 1.5.9
+- Linguagem: JavaFX 2.0 + Spring Framework 1.5.9
 - Banco de Dados: MySQL
 - IDE: Eclipse  e o plugin e(fx)clipse, com o facilitador JavaFX Scene Builder 2.0
+- Framework Server: Hibernate 5.2.11
 - JDK 8
 
 
