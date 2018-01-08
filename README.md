@@ -7,7 +7,7 @@
 - Linguagem: JAVA
 - Banco de Dados: MySQL
 - IDE: Eclipse  e o plugin e(fx)clipse, com o facilitador JavaFX Scene Builder 2.0
-- Framework Server: JavaFX 2.0, Spring Framework 1.5.9 e Hibernate 5.2.11
+- Framework Server: JavaFX 2.0, JFoenix 1.0,  Spring Framework 1.5.9 e Hibernate 5.2.11
 - JDK 8
 
 
