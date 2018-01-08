@@ -39,69 +39,67 @@
             </GridPane>
          </content>
 		</Tab>
-
-		<Tab text="Cadastro de Produto">
-			<content>
-				<GridPane minWidth="-1.0" padding="$x1">
-					<children>
-						<ComboBox fx:id="comboCategoria" maxWidth="2000.0" prefHeight="25.0" prefWidth="456.0" promptText="Escolha uma categoria" GridPane.rowIndex="4">
-							<items>
-								<FXCollections fx:factory="observableArrayList">
-									<String fx:value="Alimentos" />
-									<String fx:value="Bebidas" />
-									<String fx:value="Doces" />
-									<String fx:value="Higiene Pessoal" />
-									<String fx:value="Produtos de Beleza" />
-									<String fx:value="Automoveis" />
-									<String fx:value="Embalagens" />
-									<String fx:value="Utencilios Domesticos" />
-									<String fx:value="Papelaria" />
-									<String fx:value="Limpeza" />
-									<String fx:value="Pet Shop" />
-								</FXCollections>
-							</items>
-							<GridPane.margin>
-								<Insets left="10.0" fx:id="x1" />
-							</GridPane.margin>
-						</ComboBox>
-						<Label fx:id="labelNome" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="7" />
-						<TextField fx:id="campoNome" prefWidth="248.0" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="8" />
-						<Label text="Marca :" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="5" />
-						<ComboBox fx:id="comboMarca" maxWidth="2000.0" prefHeight="21.0" prefWidth="458.0" promptText="Escolha uma marca" GridPane.columnIndex="0" GridPane.rowIndex="6">
-							<items>
-								<FXCollections fx:factory="observableArrayList">
-								
-								</FXCollections>
-							</items>
+      <Tab text="Cadastro de Produto">
+         <content>
+            <GridPane minWidth="-1.0" padding="$x12">
+               <children>
+                  <ComboBox fx:id="comboCategoria2" maxWidth="2000.0" prefHeight="25.0" prefWidth="456.0" promptText="Escolha uma categoria" GridPane.rowIndex="4">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList">
+                           <String fx:value="Alimentos" />
+                           <String fx:value="Bebidas" />
+                           <String fx:value="Doces" />
+                           <String fx:value="Higiene Pessoal" />
+                           <String fx:value="Produtos de Beleza" />
+                           <String fx:value="Automoveis" />
+                           <String fx:value="Embalagens" />
+                           <String fx:value="Utencilios Domesticos" />
+                           <String fx:value="Papelaria" />
+                           <String fx:value="Limpeza" />
+                           <String fx:value="Pet Shop" />
+                        </FXCollections>
+                     </items>
+                     <GridPane.margin>
+                        <Insets left="10.0" fx:id="x12" />
+                     </GridPane.margin>
+                  </ComboBox>
+                  <Label fx:id="labelNome2" GridPane.columnIndex="0" GridPane.margin="$x12" GridPane.rowIndex="7" />
+                  <TextField fx:id="campoNome2" prefWidth="248.0" GridPane.columnIndex="0" GridPane.margin="$x12" GridPane.rowIndex="8" />
+                  <Label text="Marca :" GridPane.columnIndex="0" GridPane.margin="$x12" GridPane.rowIndex="5" />
+                  <ComboBox fx:id="comboMarca2" maxWidth="2000.0" prefHeight="21.0" prefWidth="458.0" promptText="Escolha uma marca" GridPane.columnIndex="0" GridPane.rowIndex="6">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList" />
+                     </items>
                      <GridPane.margin>
                         <Insets left="10.0" />
                      </GridPane.margin>
-						</ComboBox>
-						<Label text="Descrição :" GridPane.columnIndex="0" GridPane.rowIndex="9">
+                  </ComboBox>
+                  <Label text="Descrição :" GridPane.columnIndex="0" GridPane.rowIndex="9">
                      <GridPane.margin>
                         <Insets left="10.0" />
-                     </GridPane.margin></Label>
-						<Label text="Data de Vencimento :" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="11" />
-						<Label text="Quantidade Comprada :" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="13" />
-						<Label text="Quantidade Em Estoque :" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="15" />
-						<TextField fx:id="campoDtVencimento" prefWidth="200.0" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="12" />
-						<TextField fx:id="campoQtnComprada" prefWidth="200.0" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="14" />
-						<TextField fx:id="campoQtnEstoque" prefWidth="200.0" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="16" />
-						<Label text="Preço :" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="17" />
-						<TextField fx:id="campoPreco" prefWidth="200.0" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="18" />
-						<Label text="Categoria :" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="3" />
-						<Button fx:id="botaoCadastrar" alignment="BOTTOM_RIGHT" contentDisplay="BOTTOM" defaultButton="true" mnemonicParsing="false" onAction="#botaoAddProduto" text="Cadastrar" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="19" GridPane.valignment="BOTTOM" GridPane.vgrow="SOMETIMES">
-							<GridPane.margin>
-								<Insets left="10.0" right="15.0" />
-							</GridPane.margin>
-						</Button>
-						<TextArea fx:id="campoDescricao" prefHeight="33.0" prefWidth="296.0" wrapText="true" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="10" />
-                  <TextField fx:id="campoMarca" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Data de Vencimento :" GridPane.columnIndex="0" GridPane.margin="$x12" GridPane.rowIndex="11" />
+                  <Label text="Quantidade Comprada :" GridPane.columnIndex="0" GridPane.margin="$x12" GridPane.rowIndex="13" />
+                  <Label text="Quantidade Em Estoque :" GridPane.columnIndex="0" GridPane.margin="$x12" GridPane.rowIndex="15" />
+                  <TextField fx:id="campoDtVencimento2" prefWidth="200.0" GridPane.columnIndex="0" GridPane.margin="$x12" GridPane.rowIndex="12" />
+                  <TextField fx:id="campoQtnComprada2" prefWidth="200.0" GridPane.columnIndex="0" GridPane.margin="$x12" GridPane.rowIndex="14" />
+                  <TextField fx:id="campoQtnEstoque2" prefWidth="200.0" GridPane.columnIndex="0" GridPane.margin="$x12" GridPane.rowIndex="16" />
+                  <Label text="Preço :" GridPane.columnIndex="0" GridPane.margin="$x12" GridPane.rowIndex="17" />
+                  <TextField fx:id="campoPreco2" prefWidth="200.0" GridPane.columnIndex="0" GridPane.margin="$x12" GridPane.rowIndex="18" />
+                  <Label text="Categoria :" GridPane.columnIndex="0" GridPane.margin="$x12" GridPane.rowIndex="3" />
+                  <Button fx:id="botaoCadastrar2" alignment="BOTTOM_RIGHT" contentDisplay="BOTTOM" defaultButton="true" mnemonicParsing="false" onAction="#botaoAddProduto" text="Cadastrar" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="19" GridPane.valignment="BOTTOM" GridPane.vgrow="SOMETIMES">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="15.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <TextArea fx:id="campoDescricao2" prefHeight="33.0" prefWidth="296.0" wrapText="true" GridPane.columnIndex="0" GridPane.margin="$x12" GridPane.rowIndex="10" />
+                  <TextField fx:id="campoMarca2" GridPane.columnIndex="1" GridPane.rowIndex="6">
                      <GridPane.margin>
                         <Insets left="5.0" right="5.0" />
                      </GridPane.margin>
                   </TextField>
-                  <TextField fx:id="campoCategoria" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                  <TextField fx:id="campoCategoria2" GridPane.columnIndex="1" GridPane.rowIndex="4">
                      <GridPane.margin>
                         <Insets left="5.0" right="5.0" />
                      </GridPane.margin>
@@ -111,7 +109,7 @@
                         <Insets left="10.0" />
                      </padding>
                   </Label>
-                  <TextField fx:id="campoCodigoBarra" GridPane.rowIndex="2">
+                  <TextField fx:id="campoCodigoBarra2" GridPane.rowIndex="2">
                      <opaqueInsets>
                         <Insets />
                      </opaqueInsets>
@@ -119,36 +117,41 @@
                         <Insets left="10.0" />
                      </GridPane.margin>
                   </TextField>
-					</children>
-					<columnConstraints>
-						<ColumnConstraints hgrow="SOMETIMES" maxWidth="531.0" minWidth="10.0" percentWidth="80.0" prefWidth="464.6" />
-						<ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="148.0" />
-					</columnConstraints>
-					<rowConstraints>
-						<RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <Label text="Nome" GridPane.rowIndex="7">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="531.0" minWidth="10.0" percentWidth="80.0" prefWidth="464.6" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="148.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-						<RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
-						<RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
-						<RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
-						<RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
-						<RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
-						<RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
-						<RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
-						<RowConstraints fillHeight="false" maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="35.0" />
-						<RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
-						<RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
-						<RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
-						<RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
-						<RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
-						<RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
-						<RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
-						<RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints fillHeight="false" maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="35.0" />
+                  <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-						<RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
-					</rowConstraints>
-				</GridPane>
-			</content>
-		</Tab>
+                  <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </content>
+      </Tab>
 	</tabs>
 </TabPane>

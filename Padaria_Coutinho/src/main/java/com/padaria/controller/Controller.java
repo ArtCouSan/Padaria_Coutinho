@@ -2,6 +2,9 @@ package com.padaria.controller;
 
 import java.math.BigDecimal;
 
+
+import com.jfoenix.controls.*;
+import com.jfoenix.validation.RequiredFieldValidator;
 import com.padaria.dao.ProdutoDAO;
 import com.padaria.model.Produto;
 
@@ -34,7 +37,7 @@ public class Controller{
 	private TextField campoNome;
 	
 	@FXML
-	private TextArea campoDescricao;
+	private TextField campoDescricao;
 	
 	@FXML
 	private TextField campoDtVencimento;
@@ -59,6 +62,10 @@ public class Controller{
 	
 	public void botaoAddProduto() {
 	
+		RequiredFieldValidator validator = new RequiredFieldValidator();
+		
+//		campoCodigoBarra.getV
+				
 		Produto produto = new Produto();
 		
 		produto.setCodigoBarra(campoCodigoBarra.getText());
