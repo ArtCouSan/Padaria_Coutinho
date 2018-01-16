@@ -19,40 +19,34 @@ public class Controller{
 	
 	// Tela Cadastro
 	@FXML
-	private TextField campoCodigoBarra;
+	private JFXTextField campoCodigoBarra;
 	
 	@FXML
-	private ComboBox<?> comboCategoria;
+	private JFXComboBox<?> comboCategoria;
 	
 	@FXML
-	private ComboBox<?> comboMarca;
+	private JFXComboBox<?> comboMarca;
 	
 	@FXML
-	private TextField campoCategoria;
+	private JFXTextField campoNome;
 	
 	@FXML
-	private TextField campoMarca;
+	private JFXTextArea campoDescricao;
 	
 	@FXML
-	private TextField campoNome;
+	private JFXTextField campoDtVencimento;
 	
 	@FXML
-	private TextField campoDescricao;
+	private JFXTextField campoQtnComprada;
 	
 	@FXML
-	private TextField campoDtVencimento;
+	private JFXTextField campoQtnEstoque;
 	
 	@FXML
-	private TextField campoQtnComprada;
+	private JFXTextField campoPreco;
 	
 	@FXML
-	private TextField campoQtnEstoque;
-	
-	@FXML
-	private TextField campoPreco;
-	
-	@FXML
-	private Button botaoCadastrar;
+	private JFXButton botaoCadastrar;
 	
 	
 	@FXML
@@ -69,10 +63,6 @@ public class Controller{
 		Produto produto = new Produto();
 		
 		produto.setCodigoBarra(campoCodigoBarra.getText());
-		
-		produto.setCategoria(campoCategoria.getText());
-		
-		produto.setMarca(campoMarca.getText());
 
 		produto.setNome(campoNome.getText());
 		
