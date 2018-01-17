@@ -94,7 +94,22 @@
                         <Insets left="10.0" />
                      </padding>
                   </Label>
-                  <JFXComboBox fx:id="comboCategoria" prefHeight="25.0" prefWidth="593.0" GridPane.rowIndex="3">
+                  <JFXComboBox fx:id="comboCategoria" editable="true" prefHeight="25.0" prefWidth="593.0" GridPane.rowIndex="3">
+                     <items>
+								<FXCollections fx:factory="observableArrayList">
+									<String fx:value="Alimentos" />
+									<String fx:value="Bebidas" />
+									<String fx:value="Doces" />
+									<String fx:value="Higiene Pessoal" />
+									<String fx:value="Produtos de Beleza" />
+									<String fx:value="Automoveis" />
+									<String fx:value="Embalagens" />
+									<String fx:value="Utencilios Domesticos" />
+									<String fx:value="Papelaria" />
+									<String fx:value="Limpeza" />
+									<String fx:value="Pet Shop" />
+								</FXCollections>
+							</items>
                      <GridPane.margin>
                         <Insets />
                      </GridPane.margin>
@@ -102,7 +117,7 @@
                         <Insets left="10.0" />
                      </padding>
                   </JFXComboBox>
-                  <JFXComboBox fx:id="comboMarca" prefHeight="25.0" prefWidth="581.0" GridPane.rowIndex="5">
+                  <JFXComboBox fx:id="comboMarca" editable="true" prefHeight="25.0" prefWidth="581.0" GridPane.rowIndex="5">
                      <padding>
                         <Insets left="10.0" />
                      </padding>
@@ -157,11 +172,6 @@
                         <Insets left="200.0" />
                      </padding>
                   </Label>
-                  <JFXButton fx:id="botaoCadastrar" text="Salvar" GridPane.columnIndex="1" GridPane.rowIndex="15">
-                     <padding>
-                        <Insets left="50.0" right="50.0" />
-                     </padding>
-                  </JFXButton>
                   <JFXTextField fx:id="campoPreco" GridPane.rowIndex="16">
                      <GridPane.margin>
                         <Insets />
@@ -175,6 +185,11 @@
                         <Insets left="10.0" />
                      </padding>
                   </Label>
+                  <Button fx:id="botaoCadastrar" mnemonicParsing="false" onAction="#botaoAddProduto" text="Salvar" GridPane.columnIndex="1" GridPane.rowIndex="15">
+                     <GridPane.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </GridPane.margin>
+                  </Button>
                </children>
             </GridPane>
          </content>
