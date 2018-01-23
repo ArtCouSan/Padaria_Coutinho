@@ -4,12 +4,11 @@
   
 # Utilização
 
-- Linguagem: JAVA
+- Linguagem: Javascript
 - Banco de Dados: MySQL
-- IDE: Eclipse  e o plugin e(fx)clipse, com o facilitador JavaFX Scene Builder 2.0
-- Framework Server: JavaFX 2.0, JFoenix 1.0,  Spring Framework 1.5.9 e Hibernate 5.2.11
-- JDK 8
-
+- IDE: Visual Studio Code
+- Framework Server: Angular 5 e Electron
+- Framework Cliente: Bootstrap 4 e JQuery 3.1.1
 
 # Autor
 
