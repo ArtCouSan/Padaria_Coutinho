@@ -25,6 +25,7 @@ body, html { margin:0; }
 }
 
 .item_menu:hover{
+    cursor: pointer;
     background: #00b300;
 }
 
@@ -32,4 +33,8 @@ li{
 	
 	list-style-type: none;
 	
+}
+
+.telas{
+    margin-top: 2%;
 }

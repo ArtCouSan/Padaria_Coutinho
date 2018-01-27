@@ -1,18 +1,27 @@
-<div class="content-fluid">
+<div class="container-fluid">
   <div class="row">
     <div class="col-sm-2 col-md-2 col-lg-2 menu">
         <ul class="items_menu">
-            <li class="item_menu">Cadastrar Produto</li>
-            <li class="item_menu">Consultar Produtos</li>
-            <li class="item_menu">Estoque</li>
-            <li class="item_menu">Cadastrar Funcionário</li>
-            <li class="item_menu">Funcionários</li>
-            <li class="item_menu">Relatórios de Vendas</li>
+            <li class="item_menu" (click)="addComponent_AddProduto()">Cadastrar Produto</li>
+            <li class="item_menu" (click)="addComponent_SearchProduto()">Consultar Produtos</li>
+            <li class="item_menu" (click)="addComponent_Estoque()">Estoque</li>
+            <li class="item_menu" (click)="addComponent_AddFuncionario()">Cadastrar Funcionário</li>
+            <li class="item_menu" (click)="addComponent_SearchFuncionario()">Funcionários</li>
+            <li class="item_menu" (click)="addComponent_RelatorioVendas()">Relatórios de Vendas</li>
             <li class="item_menu">Relatórios de Compras</li>
-            <li class="item_menu">Relatórios de Produtos</li>
-            <li class="item_menu">Venda</li>
+            <li class="item_menu" (click)="addComponent_RelatorioProdutos()">Relatórios de Produtos</li>
+            <li class="item_menu" (click)="addComponent_Venda()">Venda</li>
           </ul>
+    </div> 
+    <div class="col-sm-10 col-md-10 col-lg-10 telas">
+        <template #cadastroProduto></template>
+        <template #cadastroFuncionario></template>
+        <template #consultarProduto></template>
+        <template #estoque></template>
+        <template #consultarFuncionario></template>
+        <template #venda></template>
+        <template #relatorioVenda></template>
+        <template #relatorioProduto></template>
     </div>
   </div>
-
 </div>
