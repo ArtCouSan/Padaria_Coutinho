@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+body, html { margin:0; }
+
+.menu{
+    height: 100vh;
+    background: linear-gradient(to bottom, #009900 0%, #269900 100%);
+}
+
+.items_menu{
+    width: 100%;
+    position: absolute;
+    padding-left: 0px;
+    left: 0%;
+    text-align: center;
+}
+
+.item_menu{
+    width: 100%;
+    color: #003300;
+    border-top: 1px outset  #208000    ;
+    padding: 5%;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.item_menu:hover{
+    cursor: pointer;
+    background: #00b300;
+}
+
+.abaSelecionado{
+    background: #97ff97;
+}
+
+li{
+	
+	list-style-type: none;
+	
+}
+
+.telas{
+    margin-top: 2%;
+}

@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-estoque',
   templateUrl: './estoque.component.html',
-  styleUrls: ['./estoque.component.css']
+  styleUrls: ['./estoque.component.scss']
 })
 export class EstoqueComponent implements OnInit {
 

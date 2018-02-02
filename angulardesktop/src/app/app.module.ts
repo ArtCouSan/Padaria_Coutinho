@@ -1,6 +1,6 @@
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 
 import { AppComponent } from './app.component';
 import { CadastroProdutoComponent } from './produto/cadastro-produto/cadastro-produto.component';
@@ -27,7 +27,8 @@ import { RelatorioComponent } from './venda/relatorio/relatorio.component';
     RelatorioComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

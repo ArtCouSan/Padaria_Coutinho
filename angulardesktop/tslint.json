@@ -80,8 +80,7 @@
       true,
       "check-open-brace",
       "check-catch",
-      "check-else",
-      "check-whitespace"
+      "check-else"
     ],
     "prefer-const": true,
     "quotemark": [
@@ -114,8 +113,7 @@
       "check-branch",
       "check-decl",
       "check-operator",
-      "check-separator",
-      "check-type"
+      "check-separator"
     ],
     "directive-selector": [
       true,

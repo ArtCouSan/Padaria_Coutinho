@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { RelatorioProdutoComponent } from './produto/relatorio/relatorio.component';
 import { Component, ComponentFactory, ViewContainerRef, ViewChild, NgModule, ComponentFactoryResolver } from '@angular/core';
 import { ConsultarProdutoComponent } from './produto/consultar-produto/consultar-produto.component';
@@ -9,11 +10,10 @@ import { ConsultarFuncionarioComponent } from './funcionario/consultar-funcionar
 import { VendaComponent } from './venda/venda/venda.component';
 import { RelatorioComponent } from './venda/relatorio/relatorio.component';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.component.scss'],
   entryComponents: [
     CadastroProdutoComponent,
     CadastroFuncionarioComponent,
@@ -38,7 +38,7 @@ export class AppComponent {
   @ViewChild('relatorioProduto', {read: ViewContainerRef}) relatorioProduto: ViewContainerRef;
 
   constructor(
-    private compFactoryResolver: ComponentFactoryResolver ){
+    private compFactoryResolver: ComponentFactoryResolver){
   }
 
 
@@ -64,22 +64,18 @@ export class AppComponent {
 
   // Add componente cadastrar produto
   addComponent_AddProduto() {
-
     let compFactory: ComponentFactory<any>;
     compFactory = this.compFactoryResolver.resolveComponentFactory(CadastroProdutoComponent);
     this.clearComponents();
     this.cadastroProduto.createComponent(compFactory);
-  
   }
 
   // Add componente cadastrar funcionario
   addComponent_AddFuncionario(){
-
     let compFactory: ComponentFactory<any>;
     compFactory = this.compFactoryResolver.resolveComponentFactory(CadastroFuncionarioComponent);
     this.clearComponents();
     this.cadastroFuncionario.createComponent(compFactory);
-    
   }
 
   // Add componente consultar produto
@@ -102,7 +98,7 @@ export class AppComponent {
 
   }
 
-  //Add componente consultar funcionario
+  // Add componente consultar funcionario
   addComponent_SearchFuncionario(){
 
     let compFactory: ComponentFactory<any>;

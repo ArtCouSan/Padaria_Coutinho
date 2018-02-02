@@ -1,15 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-cadastro-produto',
   templateUrl: './cadastro-produto.component.html',
-  styleUrls: ['./cadastro-produto.component.css'],
+  styleUrls: ['./cadastro-produto.component.scss'],
 })
-export class CadastroProdutoComponent {
+export class CadastroProdutoComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+  onSubmit(f){
+    console.log(f);
   }
+
+  constructor(
+  ) { }
+
+  ngOnInit(){
+  }
+
 
 }

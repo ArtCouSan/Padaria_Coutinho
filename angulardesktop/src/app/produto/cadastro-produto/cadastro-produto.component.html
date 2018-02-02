@@ -1,55 +1,58 @@
 <nav class="navbar navbar-dark bg-dark headerform">
   <span class="navbar-brand mb-0 h1 headerform_titulo">Cadastro de Produto</span>
 </nav>
-<form>
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" >
     <div class="form-row">
       <div class="form-group col-xs-6  col-md-6  col-lg-6">
         <label for="codigo">Código de Barras : </label>
-        <input type="text" class="form-control" id="codigoBarras" placeholder="Insira o código de barras" required>
+        <input type="text" class="form-control" id="codigoBarras" name="codigoBarras" placeholder="Insira o código de barras" (ngModel) required>
       </div>
       <div class="form-group col-xs-6  col-md-6  col-lg-6">
         <label for="nome">Nome : </label>
-        <input type="text" class="form-control" id="nome" placeholder="Insira o nome" required>
+        <input type="text" class="form-control" id="nome" name="nome" placeholder="Insira o nome" (ngModel) required>
       </div>
     </div>
     <div class="form-row">
       <div class="form-group col-xs-6  col-md-6  col-lg-6">
         <label for="marcaCombo"> Marca : </label>
-        <select id="marcaCombo" class="form-control" required>
+        <select id="marcaCombo" name="marcaCombo" class="form-control" (ngModel) required>
           <option selected>Escolha a marca ou insira :</option>
           <option>...</option>
         </select>
       </div>
       <div class="form-group col-xs-6  col-md-6  col-lg-6">
         <label for="marcaAdicionar"> Adicionar marca : </label>
-        <input type="text" class="form-control" id="marcaAdd" placeholder="Insira a marca ou a selecione" required>
+        <input type="text" class="form-control" id="marcaAdd" name="marcaAdd" placeholder="Insira a marca ou a selecione" (ngModel) required>
       </div>
     </div>
     <div class="form-row">
       <div class="form-group col-xs-6  col-md-6  col-lg-6">
         <label for="categoriaCombo"> Categoria : </label>
-        <select id="categoriaCombo" class="form-control" required>
+        <select id="categoriaCombo" name="categoriaCombo" class="form-control" (ngModel) required>
           <option selected>Escolha a categoria ou insira :</option>
           <option>...</option>
         </select>
       </div>
       <div class="form-group col-xs-6  col-md-6  col-lg-6">
         <label for="categoriaAdicionar"> Adicionar categoria : </label>
-        <input type="text" class="form-control" id="categoriaAdd" placeholder="Insira a categoria ou a selecione" required>
+        <input type="text" class="form-control" id="categoriaAdd" name="categoriaAdd" placeholder="Insira a categoria ou a selecione" (ngModel) required>
       </div>
     </div>
     <div class="form-row">
       <div class="form-group col-xs-6  col-md-6  col-lg-6">
         <label for="preco"> Preço : </label>
-        <input type="number" class="form-control" id="preco" placeholder="Insira o preço" required>
+        <input type="number" class="form-control" id="preco" name="preco" placeholder="Insira o preço" (ngModel) required>
       </div>
       <div class="form-group col-xs-6  col-md-6  col-lg-6">
         <label for="qtnComprada"> Quantidade Comprada : </label>
-        <input type="number" class="form-control" id="qtnComprada" placeholder="Insira a quantidade comprada" required>
+        <input type="number" class="form-control" id="qtnComprada" name="qtnComprada" placeholder="Insira a quantidade comprada" (ngModel) required>
       </div>
     </div>
     <div class="form-group">
         <label for="descricao"> Descrição : </label>
-        <textarea class="form-control" id="descriaco" placeholder="Insira a descricao"></textarea>
+        <textarea class="form-control" id="descricao" name="descricao" placeholder="Insira a descrição" (ngModel) required></textarea>
     </div>
+
+    <input class="btn btn-primary" type="submit" value="Submit">
+
   </form>

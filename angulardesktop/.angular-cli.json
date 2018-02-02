@@ -32,7 +32,7 @@
         "prod": "environments/environment.prod.ts"
       }
     }
-  ], 
+  ],
   "e2e": {
     "protractor": {
       "config": "./protractor.conf.js"
@@ -58,7 +58,8 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
-    "component": {}
+    "styleExt": "scss",
+    "component": {
+    }
   }
 }
