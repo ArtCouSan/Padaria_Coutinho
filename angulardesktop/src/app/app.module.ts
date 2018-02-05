@@ -1,4 +1,5 @@
-import { FormsModule } from '@angular/forms';
+import { ProdutoServiceService } from './produto/services/produto-service.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -11,6 +12,7 @@ import { ConsultarFuncionarioComponent } from './funcionario/consultar-funcionar
 import { VendaComponent } from './venda/venda/venda.component';
 import { RelatorioProdutoComponent } from './produto/relatorio/relatorio.component';
 import { RelatorioComponent } from './venda/relatorio/relatorio.component';
+import { HttpModule } from '@angular/http';
 
 // ng g c componente
 
@@ -28,9 +30,11 @@ import { RelatorioComponent } from './venda/relatorio/relatorio.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [ProdutoServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

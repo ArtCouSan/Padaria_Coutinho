@@ -1,21 +1,19 @@
-export class Produto {
+export interface Produto {
 
-    constructor(
+       id: number;
 
-        private cdgBarras: String,
+       cdgBarras: String,
 
-        private nome: String,
+       nome: String,
 
-        private marca: String,
+        marca: String,
 
-        private categoria: String,
+        categoria: String,
 
-        private preco: number,
+        preco: number,
 
-        private qtnComprada: number,
+        qtnComprada: number,
 
-        private descricao: String, 
-
-    ){}
+        descricao: String, 
 
 }
